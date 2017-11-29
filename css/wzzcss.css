@@ -1,0 +1,50 @@
+/*感觉和iOS的自动布局留间隙一样,都是8px*/
+* {margin: 0;padding: 0;}
+/*头*/
+.header,.logo {
+    margin: 0;
+    height: 100px;
+    background-color: #e3e5e5;
+}
+.search {
+    float: right;
+    margin-right: 50px;
+    margin-top: 60px;
+}
+.placeholder{
+    height:30px;
+    margin:0;
+    width:60%;
+    padding:0 3% 0 3%;
+    background-color:#fff;
+    border:1px solid #c8c8c8;
+    border-radius:3px;
+    color:#ccc;
+    font-weight:400;
+    font-size:1.2em
+}
+
+/*导航栏*/
+.nav {
+    margin: 0;
+    background-color: bisque;
+}
+.nav_content {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: cadetblue;
+}
+li {
+    float: left;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: white;
+}
+a:link,a:visited {
+    display: block;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+}
