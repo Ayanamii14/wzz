@@ -27,6 +27,7 @@
     background-color: coral;
 }
 .nav_content {
+    /*居中*/
     margin: 0 auto;
     width: 840px;
     height: 100%;
@@ -54,21 +55,26 @@ li a:hover, .drop_down:hover .drop_btn{
     display: inline-block;
 }
 .drop_content {
+    /*消除之前的display状态*/
     display: none;
+    /*绝对位置*/
     position: absolute;
     background-color: coral;
     min-width: 100px;
 }
 .drop_down:hover .drop_content {
+    /*drop_down:hover状态时，显示drop_content*/
     display: block;
 }
 .drop_content a {
+    /*drop_content中<a>标签状态*/
     color: white;
     padding: 10px 16px;
     text-decoration: none;
     display: block;
 }
 .drop_content a:hover {
+    /*drop_content中a:hover状态时的颜色*/
     background-color: #333333;
 }
 
