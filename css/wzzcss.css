@@ -1,4 +1,4 @@
-/*感觉和iOS的自动布局留间隙一样,都是8px*/
+/*iOS自动布局留间隙,也是8px*/
 * {margin: 0;padding: 0;}
 /*头，默认左上*/
 .header,.logo {
@@ -28,29 +28,48 @@
 }
 .nav_content {
     margin: 0 auto;
-    width: 800px;
+    width: 840px;
     height: 100%;
-}
-li {
-    float: left;
 }
 ul {
     list-style-type: none;
     overflow: hidden;
 }
-.nav_content a {
-    height: 50px;
-    color: white;
+li {
+    float: left;
 }
-a:link,a:visited {
-    display: block;
+li a, .drop_btn {
+    color: white;
     width: 100px;
+    display: inline-block;
     text-align: center;
     line-height: 50px;
     text-decoration: none;
 }
-a:hover,a:active {
-    background-color: black;
+li a:hover, .drop_down:hover .drop_btn{
+    background-color: orange;
+}
+/*下拉菜单*/
+.drop_down {
+    display: inline-block;
+}
+.drop_content {
+    display: none;
+    position: absolute;
+    background-color: coral;
+    min-width: 100px;
+}
+.drop_down:hover .drop_content {
+    display: block;
+}
+.drop_content a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+.drop_content a:hover {
+    background-color: #333333;
 }
 
 /*内容*/
@@ -65,4 +84,6 @@ a:hover,a:active {
 .weiba {
     height: 50px;
     background-color: coral;
+    text-align: center;
+    color: white;
 }
