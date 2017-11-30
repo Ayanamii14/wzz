@@ -1,20 +1,16 @@
 /*感觉和iOS的自动布局留间隙一样,都是8px*/
 * {margin: 0;padding: 0;}
-/*头*/
+/*头，默认左上*/
 .header,.logo {
-    margin: 0;
     height: 100px;
-    background-color: #e3e5e5;
 }
 .search {
-    float: right;
-    margin-right: 50px;
-    margin-top: 60px;
+    text-align: right;
+    margin-top: -50px;
+    margin-right: 10px;
 }
 .placeholder{
     height:30px;
-    margin:0;
-    width:60%;
     padding:0 3% 0 3%;
     background-color:#fff;
     border:1px solid #c8c8c8;
@@ -26,13 +22,14 @@
 
 /*导航栏*/
 .nav {
-    margin: 0;
-    background-color: bisque;
+    top: 0;
+    height: 50px;
+    background-color: coral;
 }
 .nav_content {
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: cadetblue;
+    margin: 0 auto;
+    width: 800px;
+    height: 100%;
 }
 li {
     float: left;
@@ -40,11 +37,32 @@ li {
 ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: white;
+}
+.nav_content a {
+    height: 50px;
+    color: white;
 }
 a:link,a:visited {
     display: block;
-    width: 10%;
+    width: 100px;
     text-align: center;
+    line-height: 50px;
     text-decoration: none;
+}
+a:hover,a:active {
+    background-color: black;
+}
+
+/*内容*/
+.wzzcontent {
+    margin: 0 auto;
+    width: 1000px;
+    height: 1000px;
+    background-color: #cccccc;
+}
+
+/*尾巴*/
+.weiba {
+    height: 50px;
+    background-color: coral;
 }
