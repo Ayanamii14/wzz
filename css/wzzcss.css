@@ -1,9 +1,18 @@
 /*iOS自动布局留间隙,也是8px*/
-* {margin: 0;padding: 0;}
+* {margin: 0;padding: 0;list-style:none;}
 /*头，默认左上*/
 .header,.logo {
     height: 100px;
 }
+body {
+    background: burlywood;
+    font-family:"宋体","微软雅黑";
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+/*搜索*/
 .search {
     text-align: right;
     margin-top: -50px;
@@ -38,18 +47,18 @@
     list-style-type: none;
     overflow: hidden;
 }
-li {
+.nav_content li {
     float: left;
 }
-li a, .drop_btn {
+.nav_content li a, .drop_btn {
     color: white;
     width: 100px;
     display: inline-block;
     text-align: center;
     line-height: 50px;
-    text-decoration: none;
+    background-color: coral;
 }
-li a:hover, .drop_down:hover .drop_btn{
+.nav_content li a:hover, .drop_down:hover .drop_btn{
     background-color: orange;
 }
 /*下拉菜单*/
@@ -73,7 +82,6 @@ li a:hover, .drop_down:hover .drop_btn{
     /*drop_content中<a>标签状态*/
     color: white;
     padding: 10px 16px;
-    text-decoration: none;
     display: block;
 }
 .drop_content a:hover {
@@ -85,15 +93,19 @@ li a:hover, .drop_down:hover .drop_btn{
 .wzzcontent {
     margin: 0 auto;
     width: 1000px;
-    height: 1000px;
-    background-color: #cccccc;
+    height: 500px;
+    background-color: white;
+    position: relative;
 }
 /*轮播图*/
 .wrap{
+    top: 10px;
+    left: 10px;
     height:270px;
     width:490px;
     overflow: hidden;
     position: relative;
+    float: left;
 }
 .wrap ul{
     position:absolute;
@@ -119,6 +131,87 @@ li a:hover, .drop_down:hover .drop_btn{
 .wrap ol .on{
     background:#E97305;
     color:#fff;
+}
+/*新闻快讯*/
+.news {
+    background-color: white;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 480px;
+    height: 270px;
+}
+.news h2, .achievements h2, .scholarisms h2 {
+    background-color: #E97305;
+    height: 32px;
+    line-height: 32px;
+    font-weight: normal;
+}
+.news h2 a, .achievements h2 a, .scholarisms h2 a {
+    color: white;
+    float: right;
+    font-size: 12px;
+    padding-right: 8px;
+}
+.news h2 span, .achievements h2 span, .scholarisms h2 span {
+    color: white;
+    font-size: 15px;
+    float: left;
+    padding-left: 10px;
+}
+.news ul {
+    margin: 0px;
+}
+.news ul li {
+    background: url("../resource/img/rightarrow.png") no-repeat left center;
+    overflow: hidden;
+    padding-left: 15px;
+    height: 24px;
+}
+.news ul li a {
+    color: black;
+    float: left;
+    font-size: 13px;
+    padding-left: 5px;
+    display: block;
+    line-height: 24px;
+    /*限制文本长度*/
+    width: 400px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.news ul li a:hover {
+    color: red;
+}
+.news ul li span {
+    float: right;
+    display: block;
+    /*限制文本长度*/
+    width: 50px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/*团队成就*/
+.achievements {
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    width: 550px;
+    height: 200px;
+    border: #dfdfdf 1px solid;
+}
+/*学术动态*/
+.scholarisms {
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    width: 410px;
+    height: 200px;
+    border: #dfdfdf 1px solid;
 }
 
 /*尾巴*/

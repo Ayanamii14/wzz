@@ -1,3 +1,4 @@
+// 轮播逻辑
 window.onload = function() {
     var wrap = document.getElementById('wrap'),
         pic = document.getElementById('pic').getElementsByTagName("li"),
