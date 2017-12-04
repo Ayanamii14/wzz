@@ -32,7 +32,9 @@
     width: 840px;
     height: 100%;
 }
-ul {
+.nav_content ul {
+    /*居中*/
+    margin: 0 auto;
     list-style-type: none;
     overflow: hidden;
 }
@@ -54,17 +56,18 @@ li a:hover, .drop_down:hover .drop_btn{
 .drop_down {
     display: inline-block;
 }
+.drop_down:hover .drop_content {
+    /*drop_down:hover状态时，显示drop_content*/
+    display: block;
+}
 .drop_content {
     /*消除之前的display状态*/
     display: none;
     /*绝对位置*/
     position: absolute;
+    z-index: 100;
     background-color: coral;
     min-width: 100px;
-}
-.drop_down:hover .drop_content {
-    /*drop_down:hover状态时，显示drop_content*/
-    display: block;
 }
 .drop_content a {
     /*drop_content中<a>标签状态*/
@@ -84,6 +87,38 @@ li a:hover, .drop_down:hover .drop_btn{
     width: 1000px;
     height: 1000px;
     background-color: #cccccc;
+}
+/*轮播图*/
+.wrap{
+    height:270px;
+    width:490px;
+    overflow: hidden;
+    position: relative;
+}
+.wrap ul{
+    position:absolute;
+}
+.wrap ul li{
+    height:270px;
+}
+.wrap ol{
+    position:absolute;
+    right:5px;
+    bottom:10px;
+}
+.wrap ol li{
+    height:20px; width: 20px;
+    background:#ccc;
+    border:solid 1px #666;
+    margin-left:5px;
+    color:#000;
+    float:left;
+    text-align:center;
+    cursor:pointer;
+}
+.wrap ol .on{
+    background:#E97305;
+    color:#fff;
 }
 
 /*尾巴*/

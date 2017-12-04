@@ -16,9 +16,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/luara.css">
     <!--script-->
-    <script src="../js/jquery-1.8.3.min.js"></script>
-    <!--Luara js文件-->
-    <script src="../js/jquery.luara.0.0.1.min.js"></script>
+    <!--<script src="../js/jquery-1.8.3.min.js"></script>-->
+    <script src="../js/wzzjs.js"></script>
 </head>
 <body>
 
@@ -93,28 +92,20 @@
 <!--内容-->
 <div class="wzzcontent">
     <!--轮播-->
-    <!--Luara图片切换骨架begin-->
-    <div class="example">
-        <ul>
-            <li><img src="../resource/img/1.jpg" alt="1"/></li>
-            <li><img src="../resource/img/2.jpg" alt="2"/></li>
-            <li><img src="../resource/img/3.jpg" alt="3"/></li>
-            <li><img src="../resource/img/4.jpg" alt="4"/></li>
+    <div class="wrap" id='wrap'>
+        <ul id="pic">
+            <li><img src="../resource/img/1.jpg" alt=""></li>
+            <li><img src="../resource/img/2.jpg" alt=""></li>
+            <li><img src="../resource/img/3.jpg" alt=""></li>
+            <li><img src="../resource/img/4.jpg" alt=""></li>
         </ul>
-        <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <ol id="list">
+            <li class="on">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
         </ol>
     </div>
-    <!--Luara图片切换骨架end-->
-    <script>
-        $(function(){
-            <!--调用Luara示例-->
-            $(".example").luara({width:"500",height:"334",interval:4000,selected:"seleted"});
-        });
-    </script>
 </div>
 
 <!--尾巴-->

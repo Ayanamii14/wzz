@@ -1,6 +1,0 @@
-li{list-style: none;}
-/*example*/
-.example{top: 100px}
-.example ol{position:relative;width: 80px;height: 20px;top:-30px;left:60px;}
-.example ol li{float:left;width: 10px;height: 10px;margin: 5px;background: #fff;}
-.example ol li.seleted{background: #1AA4CA;}
