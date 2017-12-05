@@ -5,7 +5,7 @@
     height: 100px;
 }
 body {
-    background: burlywood;
+    background: #f6f6f6;
     font-family:"宋体","微软雅黑";
 }
 a {
@@ -31,14 +31,13 @@ a {
 
 /*导航栏*/
 .nav {
-    top: 0;
     height: 50px;
-    background-color: coral;
+    background-color: #6999cf;
 }
 .nav_content {
     /*居中*/
     margin: 0 auto;
-    width: 840px;
+    width: 850px;
     height: 100%;
 }
 .nav_content ul {
@@ -56,10 +55,10 @@ a {
     display: inline-block;
     text-align: center;
     line-height: 50px;
-    background-color: coral;
 }
 .nav_content li a:hover, .drop_down:hover .drop_btn{
-    background-color: orange;
+    /*移到导航栏上的颜色*/
+    background-color: dodgerblue;
 }
 /*下拉菜单*/
 .drop_down {
@@ -75,7 +74,7 @@ a {
     /*绝对位置*/
     position: absolute;
     z-index: 100;
-    background-color: coral;
+    background-color: #6999cf;
     min-width: 100px;
 }
 .drop_content a {
@@ -92,8 +91,8 @@ a {
 /*内容*/
 .wzzcontent {
     margin: 0 auto;
-    width: 1000px;
-    height: 500px;
+    width: 1200px;
+    height: 568px;
     background-color: white;
     position: relative;
 }
@@ -101,8 +100,8 @@ a {
 .wrap{
     top: 10px;
     left: 10px;
-    height:270px;
-    width:490px;
+    height:300px;
+    width:550px;
     overflow: hidden;
     position: relative;
     float: left;
@@ -111,7 +110,7 @@ a {
     position:absolute;
 }
 .wrap ul li{
-    height:270px;
+    height:300px;
 }
 .wrap ol{
     position:absolute;
@@ -129,7 +128,7 @@ a {
     cursor:pointer;
 }
 .wrap ol .on{
-    background:#E97305;
+    background:#6999cf;
     color:#fff;
 }
 /*新闻快讯*/
@@ -138,11 +137,11 @@ a {
     float: left;
     margin-left: 20px;
     margin-top: 10px;
-    width: 480px;
-    height: 270px;
+    width: 620px;
+    height: 300px;
 }
 .news h2, .achievements h2, .scholarisms h2 {
-    background-color: #E97305;
+    background-color: #6999cf;
     height: 32px;
     line-height: 32px;
     font-weight: normal;
@@ -155,7 +154,7 @@ a {
 }
 .news h2 span, .achievements h2 span, .scholarisms h2 span {
     color: white;
-    font-size: 15px;
+    font-size: 14px;
     float: left;
     padding-left: 10px;
 }
@@ -200,7 +199,7 @@ a {
     margin-left: 10px;
     float: left;
     width: 550px;
-    height: 200px;
+    height: 238px;
     border: #dfdfdf 1px solid;
 }
 /*学术动态*/
@@ -209,15 +208,15 @@ a {
     margin-top: 10px;
     margin-left: 10px;
     float: left;
-    width: 410px;
-    height: 200px;
+    width: 620px;
+    height: 238px;
     border: #dfdfdf 1px solid;
 }
 
 /*尾巴*/
 .weiba {
     height: 50px;
-    background-color: coral;
+    background-color: #6999cf;
     text-align: center;
     color: white;
 }
