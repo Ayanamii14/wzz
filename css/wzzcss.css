@@ -18,7 +18,7 @@
 }
 body {
     background: #f6f6f6;
-    font-family:"宋体","微软雅黑";
+    font-family:"微软雅黑","宋体";
 }
 a {
     text-decoration: none;
@@ -31,8 +31,8 @@ a {
     margin-right: 40px;
 }
 .placeholder{
-    height:30px;
-    padding:0 3px 0 3px;
+    height:25px;
+    padding:3px;
     background-color:#fff;
     border:1px solid #c8c8c8;
     border-radius:3px;
@@ -104,7 +104,7 @@ a {
 .wzzcontent {
     margin: 0 auto;
     width: 1200px;
-    height: 930px;
+    height: 790px;
     background-color: white;
     position: relative;
 }
@@ -164,7 +164,7 @@ a {
 .news h2 a, .achievements h2 a, .scholarisms h2 a {
     color: white;
     float: right;
-    font-size: 12px;
+    font-size: 13px;
     padding-right: 8px;
 }
 .news h2 span, .achievements h2 span, .scholarisms h2 span, .platform h2 span {
@@ -182,10 +182,10 @@ a {
     padding-left: 15px;
     height: 24px;
 }
-.news ul li a, .scholarisms ul li a {
+.news ul li a {
     color: black;
     float: left;
-    font-size: 13px;
+    font-size: 14px;
     padding-left: 5px;
     display: block;
     line-height: 24px;
@@ -218,10 +218,6 @@ a {
     height: 238px;
 }
 /*轮播图*/
-#achpic img{
-    width: 100%;
-    height: auto;
-}
 .achievements .achwrap{
     height:206px;
     width:550px;
@@ -253,6 +249,10 @@ a {
     background:#2E6EBA;
     color:#fff;
 }
+.achievements .pic img{
+    height: auto;
+    width: 100%;
+}
 
 /*项目动态*/
 .scholarisms {
@@ -263,15 +263,29 @@ a {
     width: 620px;
     height: 238px;
 }
+.scholarisms ul li a {
+    color: black;
+    float: left;
+    font-size: 14px;
+    padding-left: 5px;
+    display: block;
+    line-height: 24px;
+    /*限制文本长度*/
+    width: 520px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .platform {
     margin-top: 10px;
     margin-left: 10px;
     width: 1180px;
-    height: 300px;
+    height: 150px;
     float: left;
 }
 .platform img {
-    margin-left: 130px;
+    margin-left: 45px;
     margin-top: 40px;
     height: 100px;
     width: auto;
@@ -279,8 +293,8 @@ a {
 
 /*尾巴*/
 .weiba {
-    height: 50px;
+    height: 65px;
     background-color: #2E6EBA;
-    text-align: center;
     color: white;
+    text-align: center;
 }
