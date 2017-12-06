@@ -4,6 +4,18 @@
 .header,.logo {
     height: 100px;
 }
+.header h1 {
+    text-align: left;
+    margin-top: -97px;
+    margin-left: 120px;
+    font-size: 45px;
+}
+.header h4 {
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 122px;
+    font-size: 22px;
+}
 body {
     background: #f6f6f6;
     font-family:"宋体","微软雅黑";
@@ -15,12 +27,12 @@ a {
 /*搜索*/
 .search {
     text-align: right;
-    margin-top: -50px;
-    margin-right: 10px;
+    margin-top: -40px;
+    margin-right: 40px;
 }
 .placeholder{
     height:30px;
-    padding:0 3% 0 3%;
+    padding:0 3px 0 3px;
     background-color:#fff;
     border:1px solid #c8c8c8;
     border-radius:3px;
@@ -32,7 +44,7 @@ a {
 /*导航栏*/
 .nav {
     height: 50px;
-    background-color: #6999cf;
+    background-color: #2E6EBA;
 }
 .nav_content {
     /*居中*/
@@ -74,7 +86,7 @@ a {
     /*绝对位置*/
     position: absolute;
     z-index: 100;
-    background-color: #6999cf;
+    background-color: dodgerblue;
     min-width: 100px;
 }
 .drop_content a {
@@ -92,56 +104,59 @@ a {
 .wzzcontent {
     margin: 0 auto;
     width: 1200px;
-    height: 568px;
+    height: 930px;
     background-color: white;
     position: relative;
 }
 /*轮播图*/
-.wrap{
+#pic img{
+    width: 100%;
+    height: auto;
+}
+.wzzcontent .wrap{
     top: 10px;
     left: 10px;
     height:300px;
-    width:550px;
+    width:450px;
     overflow: hidden;
     position: relative;
     float: left;
 }
-.wrap ul{
+.wzzcontent .wrap ul{
     position:absolute;
 }
-.wrap ul li{
+.wzzcontent .wrap ul li{
     height:300px;
 }
-.wrap ol{
+.wzzcontent .wrap ol{
     position:absolute;
-    right:5px;
-    bottom:10px;
+    left:10px;
+    bottom:3px;
 }
-.wrap ol li{
-    height:20px; width: 20px;
+.wzzcontent .wrap ol li{
+    height:20px; width: 25px;
     background:#ccc;
-    border:solid 1px #666;
     margin-left:5px;
     color:#000;
     float:left;
     text-align:center;
     cursor:pointer;
 }
-.wrap ol .on{
-    background:#6999cf;
+.wzzcontent .wrap ol .on{
+    background:#2E6EBA;
     color:#fff;
 }
 /*新闻快讯*/
-.news {
+.news, .scholarisms {
     background-color: white;
     float: left;
     margin-left: 20px;
     margin-top: 10px;
-    width: 620px;
+    width: 720px;
     height: 300px;
 }
-.news h2, .achievements h2, .scholarisms h2 {
-    background-color: #6999cf;
+.news h2, .achievements h2, .scholarisms h2, .platform h2 {
+    background-color: #2E6EBA;
     height: 32px;
     line-height: 32px;
     font-weight: normal;
@@ -152,22 +167,22 @@ a {
     font-size: 12px;
     padding-right: 8px;
 }
-.news h2 span, .achievements h2 span, .scholarisms h2 span {
+.news h2 span, .achievements h2 span, .scholarisms h2 span, .platform h2 span {
     color: white;
     font-size: 14px;
     float: left;
     padding-left: 10px;
 }
-.news ul {
+.news ul, .scholarisms ul {
     margin: 0px;
 }
-.news ul li {
+.news ul li, .scholarisms ul li {
     background: url("../resource/img/rightarrow.png") no-repeat left center;
     overflow: hidden;
     padding-left: 15px;
     height: 24px;
 }
-.news ul li a {
+.news ul li a, .scholarisms ul li a {
     color: black;
     float: left;
     font-size: 13px;
@@ -175,20 +190,21 @@ a {
     display: block;
     line-height: 24px;
     /*限制文本长度*/
-    width: 400px;
+    width: 600px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
-.news ul li a:hover {
+.news ul li a:hover, .scholarisms ul li a:hover {
     color: red;
 }
-.news ul li span {
+.news ul li span, .scholarisms ul li span {
     float: right;
     display: block;
     /*限制文本长度*/
-    width: 50px;
+    width: 75px;
     text-overflow: ellipsis;
+    text-align: right;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -200,9 +216,45 @@ a {
     float: left;
     width: 550px;
     height: 238px;
-    border: #dfdfdf 1px solid;
 }
-/*学术动态*/
+/*轮播图*/
+#achpic img{
+    width: 100%;
+    height: auto;
+}
+.achievements .achwrap{
+    height:206px;
+    width:550px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+.achievements .achwrap ul{
+    position:absolute;
+}
+.achievements .achwrap ul li{
+    height:300px;
+}
+.achievements .achwrap ol{
+    position:absolute;
+    left:180px;
+    bottom:3px;
+}
+.achievements .achwrap ol li{
+    height:15px; width: 25px;
+    background:#ccc;
+    margin-left:5px;
+    color:#000;
+    float:left;
+    text-align:center;
+    cursor:pointer;
+}
+.achievements .achwrap ol .on{
+    background:#2E6EBA;
+    color:#fff;
+}
+
+/*项目动态*/
 .scholarisms {
     background-color: white;
     margin-top: 10px;
@@ -210,13 +262,25 @@ a {
     float: left;
     width: 620px;
     height: 238px;
-    border: #dfdfdf 1px solid;
+}
+.platform {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 1180px;
+    height: 300px;
+    float: left;
+}
+.platform img {
+    margin-left: 130px;
+    margin-top: 40px;
+    height: 100px;
+    width: auto;
 }
 
 /*尾巴*/
 .weiba {
     height: 50px;
-    background-color: #6999cf;
+    background-color: #2E6EBA;
     text-align: center;
     color: white;
 }
