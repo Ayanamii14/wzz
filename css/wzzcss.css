@@ -296,5 +296,6 @@ a {
     height: 65px;
     background-color: #2E6EBA;
     color: white;
+    line-height: 65px;
     text-align: center;
 }
