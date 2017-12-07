@@ -3,18 +3,21 @@
 /*头，默认左上*/
 .header,.logo {
     height: 100px;
+    width: auto;
 }
 .header h1 {
-    text-align: left;
     margin-top: -97px;
     margin-left: 120px;
     font-size: 45px;
+    word-break: keep-all;   /*不换行*/
+    white-space:nowrap;     /*有空格不换行*/
 }
 .header h4 {
-    text-align: left;
     margin-top: -10px;
     margin-left: 122px;
     font-size: 22px;
+    word-break: keep-all;   /*不换行*/
+    white-space:nowrap;     /*有空格不换行*/
 }
 body {
     background: #f6f6f6;
@@ -34,7 +37,7 @@ a {
     height:25px;
     padding:3px;
     background-color:#fff;
-    border:1px solid #c8c8c8;
+    border:1px solid #2E6EBA;
     border-radius:3px;
     color:#ccc;
     font-weight:400;
@@ -240,14 +243,15 @@ a {
     height:15px; width: 25px;
     background:#ccc;
     margin-left:5px;
-    color:#000;
+    font-size: 5px;
+    color:#ccc;
     float:left;
     text-align:center;
     cursor:pointer;
 }
 .achievements .achwrap ol .on{
     background:#2E6EBA;
-    color:#fff;
+    color:#2E6EBA;
 }
 .achievements .pic img{
     height: auto;
