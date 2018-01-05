@@ -180,7 +180,7 @@ a {
     margin: 0px;
 }
 .news ul li, .scholarisms ul li {
-    background: url("../resource/img/rightarrow.png") no-repeat left center;
+    background: url("../../resource/img/rightarrow.png") no-repeat left center;
     overflow: hidden;
     padding-left: 15px;
     height: 24px;
@@ -297,9 +297,9 @@ a {
 
 /*尾巴*/
 .weiba {
-    height: 65px;
+    height: 50px;
     background-color: #2E6EBA;
     color: white;
-    line-height: 65px;
+    line-height: 50px;
     text-align: center;
 }
